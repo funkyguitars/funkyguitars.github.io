@@ -1,0 +1,366 @@
+/*** The new CSS Reset - version 1.2.0 (last updated 23.7.2021) ***/
+
+*:where(:not(iframe, canvas, img, svg, video):not(svg *)) {
+    all: unset;
+    display: revert;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+textarea {
+    white-space: revert;
+}
+
+/*** Fonts ***/
+
+@font-face {
+    font-family: Rage;
+    src: url('assets/Rage.woff') format('woff');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: HarlowSolid;
+    src: url('assets/HarlowSolid.woff') format('woff');
+    font-display: swap;
+}
+
+.harlow-solid {
+    font-family: HarlowSolid, Verdana, sans-serif;
+}
+
+.rage {
+    font-family: Rage, Verdana, sans-serif;
+}
+
+/*** Normal styles ***/
+
+p, div, span, h1, h2, h3, h4, h5, h6 {
+    font-family: Verdana, sans-serif;
+    color: #202020;
+}
+
+a, button {
+    cursor: pointer;
+}
+
+b {
+    font-weight: bold;
+}
+
+.main-container {
+    width: 100%;
+}
+
+#area-1-bg {
+    height: 90vh;
+    background-image: url("./assets/cover.png");
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    height: 90vh;
+    width: 100%;
+    z-index: -1;
+}
+
+#area-1 {
+    height: 90vh;
+}
+
+#area-1 .cover-text-container {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#area-1 .cover-text-container h1 {
+    font-weight: 600;
+    max-width: 85vw;
+    background-color: white;
+    padding: 2vh 2vw;
+    font-size: 2rem;
+    border-radius: 3px;
+    text-align: center;
+}
+
+#area-2 {
+    min-height: 90vh;
+    padding: 3rem 0;
+    background: rgb(209, 76, 86);
+    background: linear-gradient(145deg, rgba(209, 76, 86, 1) 0%, rgba(209, 172, 76, 1) 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#area-2 .main-title {
+    width: 80%;
+    min-height: 120px;
+    height: fit-content;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+#area-2 .title {
+    font-size: 2.5rem;
+    color: white;
+}
+
+.features {
+    width: 90%;
+}
+
+.feature {
+    padding: 2rem 0;
+}
+
+@media only screen and (min-width: 64em) {
+    .features {
+        width: 90%;
+        display: flex;
+        justify-content: space-around;
+    }
+    .feature {
+        width: 30%;
+    }
+}
+
+.feature-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.feature-separator {
+    margin-top: 5px;
+    border-top: 1px solid #8FD7F1;
+    height: 10px;
+    position: relative;
+    left: 20px;
+    width: 150px;
+}
+
+.feature-text {
+    font-size: 1.2rem;
+}
+
+.play-button {
+    transform: scale(1.5);
+}
+
+@media only screen and (min-width: 64em) {
+    #nft-sample {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.nft-sample-title {
+    color: white;
+    font-size: 2.2rem;
+}
+
+.sample-container {
+    display: flex;
+    align-items: baseline;
+}
+
+.sample-icon-container {
+    position: relative;
+    right: 3rem;
+    top: -1rem;
+}
+
+@media only screen and (min-width: 64em) {
+    .sample-icon-container {
+        right: 1rem;
+    }
+}
+
+.nft-sample-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#area-3 {
+    min-height: 20vh;
+    padding: 2rem;
+    background: #F5F5F5;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#area-3 button {
+    background: #4CA6D1;
+    font-size: 2rem;
+    padding: 0.5rem 2rem;
+    border-radius: 3px;
+    color: white;
+    margin-right: 2rem;
+    text-decoration: line-through;
+    box-shadow: 3px 3px 5px 0px silver;
+}
+
+#area-4 {
+    min-height: 80vh;
+    background-image: url("./assets/cover2.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.jam-area-text {
+    padding: 1rem 0;
+    text-align: right;
+    width: 85%;
+    float: right;
+    margin-right: 5vw;
+    font-size: 0.9rem;
+    text-shadow: white 0.1em 0.1em 0.1em;
+}
+
+.jam-area-text h2 {
+    font-size: 1.5rem;
+}
+
+@media only screen and (min-width: 48em) {
+    .jam-area-text {
+        padding: 2rem 0;
+        width: 50%;
+        font-size: 1rem;
+    }
+    .jam-area-text h2 {
+        font-size: 1.8rem;
+    }
+}
+
+#area-5 {
+    min-height: 30vh;
+    background: #4CA6D1;
+    padding: 2rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    font-size: 1rem;
+    flex-direction: column;
+}
+
+#area-5 div {
+    color: white;
+    font-weight: bold;
+}
+
+.opensea-icon {
+    height: 2.5rem;
+    width: 2.5rem;
+}
+
+@media only screen and (min-width: 64em) {
+    #area-5 {
+        font-size: 1.3rem;
+        flex-direction: row;
+    }
+    .opensea-icon {
+        height: 3rem;
+        width: 3rem;
+    }
+}
+
+.cta-arrow {
+    display: none;
+}
+
+@media only screen and (min-width: 64em) {
+    .cta-arrow {
+        display: inline;
+        width: 10rem;
+        position: relative;
+        top: 40px;
+        right: 35px;
+    }
+}
+
+#area-6 {
+    min-height: 80vh;
+    padding: 4rem 0 2rem 0;
+}
+
+@media only screen and (min-width: 64em) {
+    #area-6 {
+        min-height: 60vh;
+        padding: 4rem 0 2rem 0;
+    }
+}
+
+#area-6 h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    background: -webkit-linear-gradient(#d14c56, #d1774c);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#area-6 .container {
+    margin: 0 auto;
+    width: 80%;
+}
+
+@media (min-width: 768px) {
+    #area-6 .container {
+        width: 90%;
+    }
+}
+
+.section.ov-v {
+    margin: 0 auto;
+    margin-top: 7vh;
+}
+
+#area-7 {
+    min-height: 15vh;
+    background: #D1774C;
+    display: flex;
+    padding: 0 2rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#area-7 div {
+    color: white;
+}
+
+#fg-footer-icon {
+    width: 125px;
+}
+
+.social-icon {
+    width: 32px;
+}
+
+.copyright {
+    text-align: right;
+    font-size: 0.7rem;
+}
+
+.Animate-on-display {
+    opacity: 0;
+}

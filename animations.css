@@ -1,0 +1,284 @@
+.scale-up-center {
+    -webkit-animation: scale-up-center .4s cubic-bezier(.39, .575, .565, 1.000) both;
+    animation: scale-up-center .4s cubic-bezier(.39, .575, .565, 1.000) both;
+}
+
+.scale-down-center {
+    -webkit-animation: scale-down-center .4s cubic-bezier(.39, .575, .565, 1.000) both;
+    animation: scale-down-center .4s cubic-bezier(.39, .575, .565, 1.000) both;
+}
+
+@-webkit-keyframes scale-up-center {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+    100% {
+        -webkit-transform: scale(1.5);
+        transform: scale(1.5);
+    }
+}
+
+@keyframes scale-up-center {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+    100% {
+        -webkit-transform: scale(1.5);
+        transform: scale(1.5);
+    }
+}
+
+@-webkit-keyframes scale-down-center {
+    0% {
+        -webkit-transform: scale(1.5);
+        transform: scale(1.5);
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@keyframes scale-down-center {
+    0% {
+        -webkit-transform: scale(1.5);
+        transform: scale(1.5);
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+.tracking-in-expand {
+    -webkit-animation: tracking-in-expand 1s cubic-bezier(.215, .61, .355, 1.000) both;
+    animation: tracking-in-expand 1s cubic-bezier(.215, .61, .355, 1.000) both;
+}
+
+@-webkit-keyframes tracking-in-expand {
+    0% {
+        opacity: 0
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+@keyframes tracking-in-expand {
+    0% {
+        opacity: 0
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+@media only screen and (min-width: 64em) {
+    @-webkit-keyframes tracking-in-expand {
+        0% {
+            letter-spacing: -.2em;
+            opacity: 0
+        }
+        40% {
+            opacity: .6
+        }
+        100% {
+            opacity: 1
+        }
+    }
+    @keyframes tracking-in-expand {
+        0% {
+            letter-spacing: -.2em;
+            opacity: 0
+        }
+        40% {
+            opacity: .6
+        }
+        100% {
+            opacity: 1
+        }
+    }
+}
+
+.fade-in-delay {
+    -webkit-animation: fade-in-delay 2s cubic-bezier(.39, .575, .565, 1.000) both;
+    animation: fade-in-delay 2s cubic-bezier(.39, .575, .565, 1.000) both;
+}
+
+.fade-in {
+    -webkit-animation: fade-in 1s cubic-bezier(.39, .575, .565, 1.000) both;
+    animation: fade-in 1s cubic-bezier(.39, .575, .565, 1.000) both;
+}
+
+@-webkit-keyframes fade-in {
+    100% {
+        opacity: 1
+    }
+}
+
+@keyframes fade-in {
+    100% {
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fade-in-delay {
+    50% {
+        opacity: 0
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+@keyframes fade-in-delay {
+    50% {
+        opacity: 0
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+.wobble-hor-bottom {
+    -webkit-animation: wobble-hor-bottom 1s both;
+    animation: wobble-hor-bottom 1s both;
+}
+
+@-webkit-keyframes wobble-hor-bottom {
+    0%, 100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        -webkit-transform-origin: 50% 50%;
+        transform-origin: 50% 50%
+    }
+    15% {
+        -webkit-transform: translateX(-30px) rotate(-6deg);
+        transform: translateX(-30px) rotate(-6deg)
+    }
+    30% {
+        -webkit-transform: translateX(15px) rotate(6deg);
+        transform: translateX(15px) rotate(6deg)
+    }
+    45% {
+        -webkit-transform: translateX(-15px) rotate(-3.6deg);
+        transform: translateX(-15px) rotate(-3.6deg)
+    }
+    60% {
+        -webkit-transform: translateX(9px) rotate(2.4deg);
+        transform: translateX(9px) rotate(2.4deg)
+    }
+    75% {
+        -webkit-transform: translateX(-6px) rotate(-1.2deg);
+        transform: translateX(-6px) rotate(-1.2deg)
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes wobble-hor-bottom {
+    0%, 100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        -webkit-transform-origin: 50% 50%;
+        transform-origin: 50% 50%
+    }
+    15% {
+        -webkit-transform: translateX(-30px) rotate(-6deg);
+        transform: translateX(-30px) rotate(-6deg)
+    }
+    30% {
+        -webkit-transform: translateX(15px) rotate(6deg);
+        transform: translateX(15px) rotate(6deg)
+    }
+    45% {
+        -webkit-transform: translateX(-15px) rotate(-3.6deg);
+        transform: translateX(-15px) rotate(-3.6deg)
+    }
+    60% {
+        -webkit-transform: translateX(9px) rotate(2.4deg);
+        transform: translateX(9px) rotate(2.4deg)
+    }
+    75% {
+        -webkit-transform: translateX(-6px) rotate(-1.2deg);
+        transform: translateX(-6px) rotate(-1.2deg)
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.slide-in-right-1 {
+    -webkit-animation: slide-in-right .5s cubic-bezier(.25, .46, .45, .94) both;
+    animation: slide-in-right .5s cubic-bezier(.25, .46, .45, .94) both;
+}
+
+.slide-in-right-2 {
+    -webkit-animation: slide-in-right .5s cubic-bezier(.25, .46, .45, .94) 0.5s both;
+    animation: slide-in-right .5s cubic-bezier(.25, .46, .45, .94) 0.5s both;
+}
+
+@-webkit-keyframes slide-in-right {
+    0% {
+        -webkit-transform: translateX(1000px);
+        transform: translateX(1000px);
+        opacity: 0
+    }
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        opacity: 1
+    }
+}
+
+@keyframes slide-in-right {
+    0% {
+        -webkit-transform: translateX(1000px);
+        transform: translateX(1000px);
+        opacity: 0
+    }
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        opacity: 1
+    }
+}
+
+.slide-in-left-1 {
+    -webkit-animation: slide-in-left .5s cubic-bezier(.25, .46, .45, .94) 0.25s both;
+    animation: slide-in-left .5s cubic-bezier(.25, .46, .45, .94) 0.25s both;
+}
+
+.slide-in-left-2 {
+    -webkit-animation: slide-in-left .5s cubic-bezier(.25, .46, .45, .94) 0.75s both;
+    animation: slide-in-left .5s cubic-bezier(.25, .46, .45, .94) 0.75s both;
+}
+
+@-webkit-keyframes slide-in-left {
+    0% {
+        -webkit-transform: translateX(-1000px);
+        transform: translateX(-1000px);
+        opacity: 0
+    }
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        opacity: 1
+    }
+}
+
+@keyframes slide-in-left {
+    0% {
+        -webkit-transform: translateX(-1000px);
+        transform: translateX(-1000px);
+        opacity: 0
+    }
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        opacity: 1
+    }
+}
